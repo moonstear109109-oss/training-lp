@@ -259,6 +259,7 @@
     }
 
     .submit-btn:hover {
+        color: #2c7a7b;
         background: #fff;
         border: 1px solid #2c7a7b;
         box-sizing: border-box;
