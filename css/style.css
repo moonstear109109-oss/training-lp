@@ -1,0 +1,280 @@
+    /* =========================
+    ベース
+    ========================= */
+    body {
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    color: #333;
+    line-height: 1.8;
+    background: #fff;
+    }
+
+    h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    }
+
+    h1 {
+    font-size: 32px;
+    }
+
+    h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+    p {
+    font-size: 16px;
+    }
+
+    /* =========================
+    共通レイアウト
+    ========================= */
+    .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+
+    section {
+    padding: 80px 0;
+    }
+
+    /* =========================
+    FV
+    ========================= */
+    .lp-fv {
+    background: linear-gradient(180deg, #f5fbfb 0%, #ffffff 100%);
+    text-align: center;
+    padding: 100px 20px;
+    }
+
+    .lp-fv h1 {
+    font-size: 36px;
+    color: #2c7a7b;
+    margin-bottom: 10px;
+    }
+
+    .lp-fv p {
+    font-size: 18px;
+    color: #555;
+    }
+
+    /* =========================
+    CTAボタン
+    ========================= */
+    .cta-wrap {
+    margin-top: 30px;
+    }
+
+    .btn {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    border: 1px solid #2c7a7b;
+    color: #2c7a7b;
+    background: #fff;
+    }
+
+    .btn:hover {
+    background: #2c7a7b;
+    color: #fff;
+    }
+
+    a.btn.primary {
+    background: #2c7a7b;
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    }
+
+    .btn.primary:hover {
+    background: #fff;
+    color: #2c7a7b;
+    border: 1px solid #2c7a7b;
+    box-sizing: border-box;
+    }
+
+    /* =========================
+    課題提起
+    ========================= */
+    .lp-problem {
+    background: #f9f9f9;
+    }
+
+    .lp-problem .ul-center {
+    text-align: center;
+    }
+
+    .lp-problem .ul-center ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style: disc;
+    }
+
+    .lp-problem li {
+    margin-bottom: 10px;
+    }
+
+    /* =========================
+    カード（研修メリット）
+    ========================= */
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    }
+
+    .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    }
+
+    /* =========================
+    研修内容
+    ========================= */
+
+    .lp-curriculum {
+    text-align: center;
+    }
+
+    .lp-curriculum ol {
+    display: inline-block; 
+    text-align: left;      
+    padding-left: 20px;    
+    margin: 0 auto;
+    }
+
+    .lp-curriculum li {
+    margin-bottom: 12px;
+    }
+
+    /* =========================
+    対象者
+    ========================= */
+    .lp-target {
+    background: #f5fbfb;
+    text-align: center;
+    }
+
+    /* =========================
+    講師紹介
+    ========================= */
+    .teacher-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .teacher-box img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+
+    /* =========================
+    CTA再
+    ========================= */
+    .lp-cta {
+    background: #2c7a7b;
+    color: #fff;
+    text-align: center;
+    }
+
+    .lp-cta h2 {
+    color: #fff;
+    }
+
+    /* =========================
+    FAQ
+    ========================= */
+    .lp-faq details {
+    max-width: 800px;
+    margin: 10px auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    }
+
+    /* =========================
+    お問い合わせ
+    ========================= */
+    .lp-contact {
+    background: #fff;
+    }
+
+    .lp-contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    }
+
+    .lp-contact input,
+    .lp-contact textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    }
+
+    .lp-contact button {
+    padding: 14px;
+    background: #2c7a7b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    }
+
+    /* =========================
+    レスポンシブ
+    ========================= */
+    @media (max-width: 768px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /*-- =========================
+        無料セミナー・CTA
+        ========================= --*/
+    .lp-cta h2 {
+        font-size: 22px;
+    }
+    
+
+    .cta-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    }
+
+    }
